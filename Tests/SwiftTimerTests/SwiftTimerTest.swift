@@ -8,13 +8,13 @@
 import XCTest
 @testable import SwiftTimer
 
-@available(iOS 13.0, *)
+@available(iOS 17.0, *)
 final class SwiftTimerTest: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         
-        timerSequenceManager = SwiftTimer.shared
+        timerSequenceManager = TimerSequence.shared
     }
 
     override func tearDownWithError() throws {
@@ -22,7 +22,7 @@ final class SwiftTimerTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    var timerSequenceManager: SwiftTimer!
+    var timerSequenceManager: TimerSequence!
         
 //    override func setUp() {
 //        super.setUp()
